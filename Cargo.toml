@@ -1,0 +1,27 @@
+cargo-features = ["strip"]
+
+[package]
+name        = "dirs-cli"
+version     = "0.0.1"
+authors     = ["Simon Ochsenreither <simon@ochsenreither.de>"]
+description = "A tiny low-level command line application that provides platform-specific standard locations of directories for config, cache and other data on Linux, Windows, macOS and Redox by leveraging the mechanisms defined by the XDG base/user directory specifications on Linux, the Known Folder API on Windows, and the Standard Directory guidelines on macOS."
+readme      = "README.md"
+license     = "MPL-2.0"
+repository  = "https://github.com/soc/dirs-cli-rs"
+maintenance = { status = "actively-developed" }
+keywords    = ["xdg", "basedir", "app_dirs", "path", "folder"]
+
+[dependencies]
+dirs = "4.0.0"
+
+[profile.dev]     # 4200KiB
+[profile.release] # 3600KiB
+lto = true        # 1600KiB
+codegen-units = 1 # 1600KiB
+panic = "abort"   # 1530KiB
+#cargo +nightly build -Z build-std=std,panic_abort --target x86_64-unknown-linux-gnu --release
+                  #  296KiB
+#cargo +nightly build -Z build-std=std,panic_abort -Z build-std-features=panic_immediate_abort --target x86_64-unknown-linux-gnu --release
+                  #   58KiB
+# #![no_main]     #   37KiB
+strip = true      #   30KiB
