@@ -1,5 +1,4 @@
 [![crates.io](https://img.shields.io/crates/v/dirs-cli.svg)](https://crates.io/crates/dirs-cli)
-[![API documentation](https://docs.rs/dirs-cli/badge.svg)](https://docs.rs/dirs-cli/)
 ![actively developed](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
 ![License: MPL-2.0](https://shields.io/badge/license-MPL--2.0-orange.svg)
 
