@@ -1,6 +1,6 @@
-[![crates.io](https://img.shields.io/crates/v/dirs-cli.svg)](https://crates.io/crates/dirs-cli)
-![actively developed](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
-![License: MPL-2.0](https://shields.io/badge/license-MPL--2.0-orange.svg)
+[![crates.io](https://img.shields.io/crates/v/dirs-cli.svg?style=for-the-badge)](https://crates.io/crates/dirs-cli)
+![actively developed](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg?style=for-the-badge)
+![License: MPL-2.0](https://shields.io/badge/license-MPL--2.0-orange.svg?style=for-the-badge)
 
 # `dirs-cli`
 
