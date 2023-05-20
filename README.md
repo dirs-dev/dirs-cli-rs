@@ -23,6 +23,18 @@ The application provides the location of these directories by leveraging the mec
 This application is written in Rust, and supports Linux, Redox, macOS and Windows.
 Other platforms are also supported; they use the Linux conventions.
 
+## Usage
+
+#### Dependency
+
+Add the application as a dependency to your project by inserting
+
+```toml
+dirs-cli = "0.1.0"
+```
+
+into the `[dependencies]` section of your Cargo.toml file.
+
 ## Build
 
 It's possible to cross-compile this application if the necessary toolchains are installed with rustup.
@@ -38,6 +50,11 @@ cargo build --target=x86_64-unknown-redox
 ```
 
 The [Cargo.toml](Cargo.toml) file contains additional information on how to minimize the binary size.
+
+## Changelog
+
+### 0.1.0
+- Initial release, based on dirs-rs version 5
 
 ## License
 
